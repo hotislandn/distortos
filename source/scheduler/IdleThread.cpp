@@ -32,7 +32,7 @@ void idleThreadFunction();
 
 /// size of idle thread's stack, bytes
 #ifdef DISTORTOS_THREAD_DETACH_ENABLE
-constexpr size_t idleThreadStackSize {320};
+constexpr size_t idleThreadStackSize {1024};
 #else	// !def DISTORTOS_THREAD_DETACH_ENABLE
 constexpr size_t idleThreadStackSize {128};
 #endif	// !def DISTORTOS_THREAD_DETACH_ENABLE
